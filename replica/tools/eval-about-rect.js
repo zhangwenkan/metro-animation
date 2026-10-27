@@ -1,0 +1,1 @@
+(() => { const r = document.querySelector("button[aria-label=\u0027About & contact\u0027]")?.getBoundingClientRect(); return r ? [Math.round(r.x), Math.round(r.y), Math.round(r.width), Math.round(r.height)] : null; })()

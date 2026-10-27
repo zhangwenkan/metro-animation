@@ -1,0 +1,4 @@
+[
+  { "name": "hotspot", "sel": "button[aria-label^=Read]", "notext": true },
+  { "name": "caption", "sel": "main p", "notext": true }
+]

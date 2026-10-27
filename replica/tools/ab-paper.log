@@ -1,0 +1,9 @@
+﻿
+[hotspot] button[aria-label^=Read]
+  rect site=1205.17,722.84,229.15,61.36 mine=1205.11,722.92,229.18,61.47
+  inset: site="0px 1355.85px 838.641px 0px" mine="0px 1355.82px 838.531px 0px"
+  width: site="229.148px" mine="229.18px"
+  height: site="61.3594px" mine="61.4688px"
+  transform: site="matrix(1, 0, 0, 1, 1205.17, 722.841)" mine="matrix(1, 0, 0, 1, 1205.11, 722.922)"
+
+7/8 probes identical

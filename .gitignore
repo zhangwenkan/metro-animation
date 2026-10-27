@@ -1,0 +1,37 @@
+# 依赖（311 MB，绝不入库）
+node_modules/
+
+# 构建产物
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+vite.config.*.timestamp-*
+
+# 缓存
+.vite/
+.cache/
+.playwright/
+test-results/
+
+# A/B 截图：每次验证都会重刷一遍，体积大且可随时复现
+_*.png
+replica/_*.png
+
+# 本地环境变量
+.env
+.env.local
+.env.*.local
+*.local
+
+# 编辑器
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini

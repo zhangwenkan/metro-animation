@@ -1,0 +1,215 @@
+[
+  {
+    "step": "thought",
+    "thought": "I’m starving to death.",
+    "reply": null,
+    "chunks": [],
+    "listening": false,
+    "choices": [],
+    "leave": false,
+    "hotspot": [
+      1204.7,
+      735.1,
+      229.2
+    ]
+  },
+  {
+    "step": 0,
+    "thought": null,
+    "reply": "Got any snacks on you?",
+    "chunks": [
+      {
+        "text": "Got ",
+        "opacity": "1"
+      },
+      {
+        "text": "any ",
+        "opacity": "1"
+      },
+      {
+        "text": "snacks ",
+        "opacity": "1"
+      },
+      {
+        "text": "on ",
+        "opacity": "1"
+      },
+      {
+        "text": "you?",
+        "opacity": "1"
+      }
+    ],
+    "listening": false,
+    "choices": [
+      "Want some sunflower seeds?",
+      "Nothing, sorry.",
+      "What do you feel like?"
+    ],
+    "leave": false,
+    "hotspot": [
+      1189.2,
+      739.1,
+      281.6
+    ]
+  },
+  {
+    "step": 1,
+    "thought": null,
+    "reply": "Oh, fuck yes. I go through bags of these.",
+    "chunks": [
+      {
+        "text": "Oh, ",
+        "opacity": "1"
+      },
+      {
+        "text": "fuck ",
+        "opacity": "1"
+      },
+      {
+        "text": "yes. ",
+        "opacity": "1"
+      },
+      {
+        "text": "I ",
+        "opacity": "1"
+      },
+      {
+        "text": "go ",
+        "opacity": "1"
+      },
+      {
+        "text": "through ",
+        "opacity": "1"
+      },
+      {
+        "text": "bags ",
+        "opacity": "1"
+      },
+      {
+        "text": "of ",
+        "opacity": "1"
+      },
+      {
+        "text": "these.",
+        "opacity": "1"
+      }
+    ],
+    "listening": false,
+    "choices": [
+      "Help yourself. Long night?",
+      "Anything else you like?",
+      "I’ll let you eat."
+    ],
+    "leave": false,
+    "hotspot": [
+      1189.4,
+      740.2,
+      281.6
+    ]
+  },
+  {
+    "step": 2,
+    "thought": null,
+    "reply": "Yeah. Then someone said “one more.”",
+    "chunks": [
+      {
+        "text": "Yeah. ",
+        "opacity": "1"
+      },
+      {
+        "text": "Then ",
+        "opacity": "1"
+      },
+      {
+        "text": "someone ",
+        "opacity": "1"
+      },
+      {
+        "text": "said ",
+        "opacity": "1"
+      },
+      {
+        "text": "“one ",
+        "opacity": "1"
+      },
+      {
+        "text": "more.”",
+        "opacity": "1"
+      }
+    ],
+    "listening": false,
+    "choices": [
+      "What were you up to?",
+      "I’ll leave you to it."
+    ],
+    "leave": false,
+    "hotspot": [
+      1189.6,
+      739.2,
+      281.6
+    ]
+  },
+  {
+    "step": 3,
+    "thought": null,
+    "reply": "Ended up in Kabukicho. After that? Bit vague.",
+    "chunks": [
+      {
+        "text": "Ended ",
+        "opacity": "1"
+      },
+      {
+        "text": "up ",
+        "opacity": "1"
+      },
+      {
+        "text": "in ",
+        "opacity": "1"
+      },
+      {
+        "text": "Kabukicho. ",
+        "opacity": "1"
+      },
+      {
+        "text": "After ",
+        "opacity": "1"
+      },
+      {
+        "text": "that? ",
+        "opacity": "1"
+      },
+      {
+        "text": "Bit ",
+        "opacity": "1"
+      },
+      {
+        "text": "vague.",
+        "opacity": "1"
+      }
+    ],
+    "listening": false,
+    "choices": [
+      "Leave him to it"
+    ],
+    "leave": true,
+    "hotspot": [
+      1189.8,
+      739.8,
+      281.6
+    ]
+  },
+  {
+    "step": 4,
+    "thought": "Forgot to send the invoice.",
+    "reply": null,
+    "chunks": [],
+    "listening": false,
+    "choices": [],
+    "leave": false,
+    "hotspot": [
+      1205.2,
+      722.9,
+      229.2
+    ]
+  }
+]

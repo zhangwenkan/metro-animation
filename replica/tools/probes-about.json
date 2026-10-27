@@ -1,0 +1,14 @@
+[
+  { "name": "main", "sel": "main" },
+  { "name": "subtitle", "sel": "main p[aria-live]" },
+  { "name": "about-panel", "sel": "button[aria-label^='About']", "up": 1 },
+  { "name": "about-button", "sel": "button[aria-label^='About']" },
+  { "name": "about-section", "sel": "section[aria-label='About Tobi']" },
+  { "name": "about-scroll", "sel": "section[aria-label='About Tobi'] > div" },
+  { "name": "about-h2", "sel": "section[aria-label='About Tobi'] h2" },
+  { "name": "about-lead", "sel": "section[aria-label='About Tobi'] p" },
+  { "name": "about-row", "sel": "section[aria-label='About Tobi'] button[data-ui-sound='select']" },
+  { "name": "about-row-hover", "sel": "section[aria-label='About Tobi'] button[data-ui-sound='select'] span" },
+  { "name": "about-nav", "sel": "nav[aria-label='Contact Tobi']" },
+  { "name": "about-contact", "sel": "nav[aria-label='Contact Tobi'] a" }
+]

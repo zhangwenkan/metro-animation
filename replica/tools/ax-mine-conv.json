@@ -1,0 +1,160 @@
+[
+ {
+  "depth": 0,
+  "role": "RootWebArea",
+  "name": "Ajo was here"
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "main",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "button",
+  "name": "Read the newspaper"
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 5,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 6,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 7,
+  "role": "region",
+  "name": "Ajo’s reply"
+ },
+ {
+  "depth": 8,
+  "role": "image",
+  "name": "Ajo"
+ },
+ {
+  "depth": 8,
+  "role": "paragraph",
+  "name": "",
+  "live": "polite"
+ },
+ {
+  "depth": 9,
+  "role": "StaticText",
+  "name": "Got any snacks on you?"
+ },
+ {
+  "depth": 10,
+  "role": "InlineTextBox",
+  "name": "Got any snacks on you?"
+ },
+ {
+  "depth": 5,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 6,
+  "role": "button",
+  "name": "Want some sunflower seeds?"
+ },
+ {
+  "depth": 7,
+  "role": "StaticText",
+  "name": "Want some sunflower seeds?"
+ },
+ {
+  "depth": 8,
+  "role": "InlineTextBox",
+  "name": "Want some sunflower seeds?"
+ },
+ {
+  "depth": 6,
+  "role": "button",
+  "name": "Nothing, sorry."
+ },
+ {
+  "depth": 7,
+  "role": "StaticText",
+  "name": "Nothing, sorry."
+ },
+ {
+  "depth": 8,
+  "role": "InlineTextBox",
+  "name": "Nothing, sorry."
+ },
+ {
+  "depth": 6,
+  "role": "button",
+  "name": "What do you feel like?"
+ },
+ {
+  "depth": 7,
+  "role": "StaticText",
+  "name": "What do you feel like?"
+ },
+ {
+  "depth": 8,
+  "role": "InlineTextBox",
+  "name": "What do you feel like?"
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "paragraph",
+  "name": "",
+  "live": "polite"
+ },
+ {
+  "depth": 5,
+  "role": "StaticText",
+  "name": "The humanoid cat in this carriage is Ajo."
+ },
+ {
+  "depth": 6,
+  "role": "InlineTextBox",
+  "name": "The humanoid cat in this carriage is Ajo."
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "button",
+  "name": "About & contact",
+  "expanded": false
+ },
+ {
+  "depth": 3,
+  "role": "image",
+  "name": ""
+ }
+]

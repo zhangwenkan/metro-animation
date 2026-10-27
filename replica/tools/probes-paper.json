@@ -1,0 +1,10 @@
+[
+  { "name": "hotspot", "sel": "button[aria-label^=Read]", "notext": true },
+  { "name": "paper", "sel": "dialog[aria-label^=The]", "notext": true },
+  { "name": "paper-close", "sel": "dialog > button", "notext": true },
+  { "name": "paper-foot", "sel": "dialog > div", "notext": true },
+  { "name": "paper-bubble", "sel": "dialog img", "up": 1, "notext": true },
+  { "name": "paper-face", "sel": "dialog img", "notext": true },
+  { "name": "paper-text", "sel": "dialog img", "up": 2, "notext": true },
+  { "name": "paper-sub", "sel": "dialog p" }
+]

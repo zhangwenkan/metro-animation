@@ -1,0 +1,12 @@
+[
+  { "name": "back", "sel": "button[aria-label='Back to info']" },
+  { "name": "h2", "sel": "section[aria-label='About Tobi'] h2" },
+  { "name": "list", "sel": "section[aria-label='About Tobi'] ul" },
+  { "name": "item1", "sel": "section[aria-label='About Tobi'] li:nth-child(1) a" },
+  { "name": "item2", "sel": "section[aria-label='About Tobi'] li:nth-child(2) a" },
+  { "name": "item3", "sel": "section[aria-label='About Tobi'] li:nth-child(3) a" },
+  { "name": "item4", "sel": "section[aria-label='About Tobi'] li:nth-child(4) span" },
+  { "name": "item5", "sel": "section[aria-label='About Tobi'] li:nth-child(5) a" },
+  { "name": "item6", "sel": "section[aria-label='About Tobi'] li:nth-child(6) span" },
+  { "name": "nav", "sel": "nav[aria-label='Contact Tobi']" }
+]

@@ -1,0 +1,8 @@
+[
+  { "name": "entry-section", "sel": "section" },
+  { "name": "entry-fold", "sel": "section > div" },
+  { "name": "entry-logo", "sel": "svg[aria-label='ajo was here']" },
+  { "name": "entry-button", "sel": "button[data-ui-sound='page-enter']" },
+  { "name": "entry-output", "sel": "section output" },
+  { "name": "entry-runner", "sel": "[class*='runner']" }
+]

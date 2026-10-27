@@ -1,0 +1,5 @@
+﻿[size] [1600,900,1600,900]
+[full] {"mineMean":[248.2,249.2,252.4],"overThreshold":0,"width":1600,"height":900}
+[logo] site=243.2,245.1,251.1 mine=243.2,245.1,251.1 delta=0,0,0 over=0%
+[button] site=133.1,133.1,133 mine=133.1,133.1,133 delta=0,0,0 over=0%
+[all] site=248.2,249.2,252.4 mine=248.2,249.2,252.4 delta=0,0,0 over=0%

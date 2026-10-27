@@ -1,0 +1,5 @@
+[
+  { "name": "reply-text", "sel": "section[aria-label^=Ajo] p" },
+  { "name": "choice-1", "sel": "button[data-ui-sound=select]" },
+  { "name": "hotspot", "sel": "button[aria-label='Read the newspaper']", "notext": true }
+]

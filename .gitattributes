@@ -1,0 +1,15 @@
+# 统一用 LF 入库，避免 Windows 下 CRLF 反复改写导致的假 diff
+* text=auto eol=lf
+
+# 二进制资产必须显式声明，防止 git 把它当文本做换行转换
+*.glb binary
+*.exr binary
+*.ogg binary
+*.mp3 binary
+*.webp binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.otf binary
+*.woff2 binary
+*.wasm binary

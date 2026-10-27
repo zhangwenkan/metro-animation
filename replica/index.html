@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ajo was here</title>
+    <!-- 与站点 <head> 的元信息逐条对齐 -->
+    <meta
+      name="description"
+      content="Making the web a little less boring. An interactive world by Tobi Moccagatta."
+    />
+    <meta property="og:title" content="Ajo was here" />
+    <meta
+      property="og:description"
+      content="Making the web a little less boring. An interactive world by Tobi Moccagatta."
+    />
+    <meta property="og:image" content="https://tobis.vision/opengraph-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ajo was here — blue wordmark with アホ on white." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ajo was here" />
+    <meta
+      name="twitter:description"
+      content="Making the web a little less boring. An interactive world by Tobi Moccagatta."
+    />
+    <meta name="twitter:image" content="https://tobis.vision/twitter-image.jpg" />
+    <meta name="twitter:image:alt" content="Ajo was here — blue wordmark with アホ on white." />
+    <meta name="twitter:image:type" content="image/jpeg" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <!-- 站点声明了两个图标：ico 48、png 32；png 那一份稍后由 BlinkingFavicon 接管闪烁 -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon/ajo-open.png" type="image/png" sizes="32x32" />
+  </head>
+  <body class="bg-black text-white">
+    <!-- role=presentation：站点直挂 body，我们多一层 Vite 挂载点；
+         声明成纯展示元素后它不进无障碍树，读屏的遍历顺序才和站点一致。 -->
+    <div id="root" role="presentation"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+[
+ {
+  "depth": 0,
+  "role": "RootWebArea",
+  "name": "Ajo was here"
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "main",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "button",
+  "name": "Read the newspaper"
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "paragraph",
+  "name": "",
+  "live": "polite"
+ },
+ {
+  "depth": 5,
+  "role": "StaticText",
+  "name": "The humanoid cat in this carriage is Ajo."
+ },
+ {
+  "depth": 6,
+  "role": "InlineTextBox",
+  "name": "The humanoid cat in this carriage is Ajo."
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "button",
+  "name": "Close info",
+  "expanded": true
+ },
+ {
+  "depth": 3,
+  "role": "image",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "region",
+  "name": "About Tobi"
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 5,
+  "role": "heading",
+  "name": "Tobi Moccagatta",
+  "level": 2
+ },
+ {
+  "depth": 6,
+  "role": "StaticText",
+  "name": "Tobi Moccagatta"
+ },
+ {
+  "depth": 7,
+  "role": "InlineTextBox",
+  "name": "Tobi Moccagatta"
+ },
+ {
+  "depth": 5,
+  "role": "paragraph",
+  "name": ""
+ },
+ {
+  "depth": 6,
+  "role": "StaticText",
+  "name": "Design engineer at basement.studio."
+ },
+ {
+  "depth": 7,
+  "role": "InlineTextBox",
+  "name": "Design engineer at basement.studio."
+ },
+ {
+  "depth": 6,
+  "role": "LineBreak",
+  "name": "\n"
+ },
+ {
+  "depth": 7,
+  "role": "InlineTextBox",
+  "name": "\n"
+ },
+ {
+  "depth": 6,
+  "role": "StaticText",
+  "name": "Making the web a little less boring."
+ },
+ {
+  "depth": 7,
+  "role": "InlineTextBox",
+  "name": "Making the web a little less boring."
+ },
+ {
+  "depth": 5,
+  "role": "paragraph",
+  "name": ""
+ },
+ {
+  "depth": 6,
+  "role": "StaticText",
+  "name": "Buenos Aires, Argentina"
+ },
+ {
+  "depth": 7,
+  "role": "InlineTextBox",
+  "name": "Buenos Aires, Argentina"
+ },
+ {
+  "depth": 5,
+  "role": "button",
+  "name": "About me"
+ },
+ {
+  "depth": 5,
+  "role": "button",
+  "name": "Selected work"
+ },
+ {
+  "depth": 3,
+  "role": "navigation",
+  "name": "Contact Tobi"
+ },
+ {
+  "depth": 4,
+  "role": "link",
+  "name": "Email Tobi"
+ },
+ {
+  "depth": 5,
+  "role": "image",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "link",
+  "name": "GitHub"
+ },
+ {
+  "depth": 5,
+  "role": "image",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "link",
+  "name": "X"
+ },
+ {
+  "depth": 5,
+  "role": "image",
+  "name": ""
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "alert",
+  "name": "",
+  "live": "assertive"
+ }
+]

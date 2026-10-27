@@ -1,0 +1,9 @@
+[
+  { "name": "hotspot", "sel": "button[aria-label='Read the newspaper']", "notext": true },
+  { "name": "thought-box", "sel": "div[class*='w-[min(280px']", "notext": true },
+  { "name": "reply-panel", "sel": "section[aria-label^=Ajo]", "notext": true },
+  { "name": "reply-face", "sel": "section[aria-label^=Ajo] img", "notext": true },
+  { "name": "reply-text", "sel": "section[aria-label^=Ajo] p", "notext": true },
+  { "name": "tail", "sel": "svg[class*='-bottom-[15px]']", "notext": true },
+  { "name": "choice-1", "sel": "button[data-ui-sound=select]", "notext": true }
+]

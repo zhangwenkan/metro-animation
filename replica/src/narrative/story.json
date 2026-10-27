@@ -1,0 +1,613 @@
+{
+  "version": 1,
+  "status": "draft_for_line_review",
+  "character": "Ajo",
+  "scene": "train",
+  "language": "en",
+  "writingRules": [
+    "Reserved and polite. He does not want strangers to learn much about him.",
+    "Never pretentious. Plain words, no speeches, name-dropping, or rehearsed wisdom.",
+    "Answer only what was asked. Do not volunteer his job, history, address, relationships, or interests.",
+    "A warmer mood changes delivery, not his privacy boundaries.",
+    "This prerelease stays on the train indefinitely. Heading home is background motivation, not an upcoming event. Never promise arrival, getting off, a countdown, or another playable scene.",
+    "Do not turn every answer into a joke. Leave room for silence.",
+    "One reply variant plays per node. Choices affect hidden trust and irritation; no visible mood meter."
+  ],
+  "thoughts": [
+    {
+      "id": "journey",
+      "text": "Where the fuck am I going?",
+      "startNode": "ride",
+      "availableWhen": "idle"
+    },
+    {
+      "id": "quiet",
+      "text": "Is this train going in loops or something?",
+      "startNode": "awake",
+      "availableWhen": "idle"
+    },
+    {
+      "id": "food",
+      "text": "I’m starving to death.",
+      "startNode": "hungry",
+      "availableWhen": "idle"
+    },
+    {
+      "id": "announcement",
+      "text": "Yeah lady, I heard you...",
+      "startNode": "operator",
+      "availableWhen": "cat_disclaimer_finished"
+    },
+    {
+      "id": "work",
+      "text": "Forgot to send the invoice.",
+      "startNode": "invoice",
+      "availableWhen": "idle"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ride",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "You know where this train’s going?"
+        },
+        {
+          "mood": "tired",
+          "text": "Please tell me you know where we’re going."
+        }
+      ],
+      "choices": [
+        {
+          "text": "I was hoping you knew.",
+          "next": "settled"
+        },
+        {
+          "text": "Not sure, actually.",
+          "next": "unsure"
+        },
+        {
+          "text": "Where are you headed?",
+          "next": "home"
+        }
+      ]
+    },
+    {
+      "id": "settled",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Well, shit."
+        },
+        {
+          "mood": "warmer",
+          "text": "Great. We’re doing this together."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "unsure",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Fuck it. We’ll find out."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "home",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Home. Assuming I got on the right train."
+        },
+        {
+          "mood": "warmer",
+          "text": "Hopefully home. You?"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Same here.",
+          "next": "same"
+        },
+        {
+          "text": "Where’s home?",
+          "next": "private",
+          "intent": "pry"
+        },
+        {
+          "text": "Have a good one.",
+          "next": "bye",
+          "intent": "respect"
+        }
+      ]
+    },
+    {
+      "id": "same",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Fair enough. Might as well get comfortable."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "private",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "I’d rather keep that to myself."
+        },
+        {
+          "mood": "irritated",
+          "text": "You want the spare key too?"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Fair enough. None of my business.",
+          "next": "privacy_respected",
+          "intent": "respect"
+        },
+        {
+          "text": "Come on, where do you actually live?",
+          "next": "private_again",
+          "intent": "pry"
+        }
+      ]
+    },
+    {
+      "id": "awake",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "I swear we’ve passed that building already."
+        },
+        {
+          "mood": "tired",
+          "text": "Either we’re going in circles or I’m still asleep."
+        },
+        {
+          "mood": "warmer",
+          "text": "You saw that too, right? Same bloody building."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Maybe you need some sleep.",
+          "next": "night"
+        },
+        {
+          "text": "Long night?",
+          "next": "night"
+        },
+        {
+          "text": "I’ll let you rest.",
+          "next": "rest",
+          "intent": "respect"
+        }
+      ]
+    },
+    {
+      "id": "night",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "It was supposed to be one beer."
+        },
+        {
+          "mood": "warmer",
+          "text": "Yeah. Then someone said “one more.”"
+        }
+      ],
+      "choices": [
+        {
+          "text": "What were you up to?",
+          "next": "night_details"
+        },
+        {
+          "text": "I’ll leave you to it.",
+          "next": "rest",
+          "intent": "respect"
+        }
+      ]
+    },
+    {
+      "id": "night_details",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Had a few. Apparently caught a train."
+        },
+        {
+          "mood": "irritated",
+          "text": "I’ll tell you when I remember."
+        },
+        {
+          "mood": "warmer",
+          "text": "Ended up in Kabukicho. After that? Bit vague."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "rest",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Cheers."
+        },
+        {
+          "mood": "warmer",
+          "text": "Thanks, mate."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "hungry",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "You got anything to eat?"
+        },
+        {
+          "mood": "tired",
+          "text": "Got any snacks on you?"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Want some sunflower seeds?",
+          "next": "seeds",
+          "intent": "offer"
+        },
+        {
+          "text": "Nothing, sorry.",
+          "next": "food_unknown"
+        },
+        {
+          "text": "What do you feel like?",
+          "next": "food_preference"
+        }
+      ]
+    },
+    {
+      "id": "food_unknown",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "No worries."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "food_preference",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "A burger. A second burger."
+        },
+        {
+          "mood": "warmer",
+          "text": "A burger and a beer. Clearly I’ve learned nothing."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "operator",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "I bought a ticket and got a fucking press release."
+        },
+        {
+          "mood": "irritated",
+          "text": "Ticket’s right here. Want me to frame it?"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Bit much announcing your ticket to everyone.",
+          "next": "operator_support",
+          "intent": "empathize"
+        },
+        {
+          "text": "You sure that ticket’s yours?",
+          "next": "ticket_tease",
+          "intent": "tease"
+        },
+        {
+          "text": "Was that about you?",
+          "next": "operator_reply"
+        }
+      ]
+    },
+    {
+      "id": "operator_reply",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Apparently. I’ve literally just been sitting here."
+        },
+        {
+          "mood": "warmer",
+          "text": "Apparently buying a ticket wasn’t enough."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "operator_end",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Anyway."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "bye",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "You too."
+        },
+        {
+          "mood": "warmer",
+          "text": "You too, mate."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "private_again",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "I said I’d rather not."
+        },
+        {
+          "mood": "irritated",
+          "text": "I’m not giving you my address, man."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sorry. That was nosy.",
+          "next": "apology",
+          "intent": "apologize"
+        },
+        {
+          "text": "Alright. I’ll leave you alone.",
+          "next": "rest",
+          "intent": "respect"
+        }
+      ]
+    },
+    {
+      "id": "privacy_respected",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "No worries."
+        },
+        {
+          "mood": "warmer",
+          "text": "Thanks. Nothing personal."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "apology",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "We’re good."
+        },
+        {
+          "mood": "warmer",
+          "text": "You’re alright. Forget it."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "seeds",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Absolutely. Pass them over."
+        },
+        {
+          "mood": "warmer",
+          "text": "Oh, fuck yes. I go through bags of these."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Help yourself. Long night?",
+          "next": "night",
+          "intent": "respect"
+        },
+        {
+          "text": "Anything else you like?",
+          "next": "food_preference"
+        },
+        {
+          "text": "I’ll let you eat.",
+          "next": "rest",
+          "intent": "respect"
+        }
+      ]
+    },
+    {
+      "id": "operator_support",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Right? I paid like everyone else."
+        },
+        {
+          "mood": "warmer",
+          "text": "Do they always dox their customers?"
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ticket_tease",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "No, I mugged a businessman for it."
+        },
+        {
+          "mood": "irritated",
+          "text": "Alright. Joke’s done."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Alright, fair enough.",
+          "next": "operator_end",
+          "intent": "respect"
+        },
+        {
+          "text": "Seriously though. Is it yours?",
+          "next": "ticket_again",
+          "intent": "tease"
+        }
+      ]
+    },
+    {
+      "id": "ticket_again",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Yes. Mine."
+        },
+        {
+          "mood": "irritated",
+          "text": "You work for the train company or something?"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sorry. I’m messing with you.",
+          "next": "apology",
+          "intent": "apologize"
+        },
+        {
+          "text": "I’ll leave you to it.",
+          "next": "rest",
+          "intent": "respect"
+        }
+      ]
+    },
+    {
+      "id": "invoice",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "No wonder they’ve been so nice to me."
+        }
+      ],
+      "choices": [
+        {
+          "text": "What do you do for work?",
+          "next": "work_role"
+        }
+      ]
+    },
+    {
+      "id": "work_role",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "I’m a design engineer."
+        }
+      ],
+      "choices": [
+        {
+          "text": "What’s that?",
+          "next": "work_explain"
+        }
+      ]
+    },
+    {
+      "id": "work_explain",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Fancy word for programmer. I center divs."
+        }
+      ],
+      "choices": [
+        {
+          "text": "And they let you work shirtless?",
+          "next": "work_shirtless"
+        },
+        {
+          "text": "Sounds easy.",
+          "next": "work_easy"
+        },
+        {
+          "text": "Are you working right now?",
+          "next": "work_now"
+        }
+      ]
+    },
+    {
+      "id": "work_shirtless",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "I work from home. They’ve only seen my head."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "work_easy",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Oh yeah? Then they ask me to uncenter it. Then center it again."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "work_now",
+      "replies": [
+        {
+          "mood": "neutral",
+          "text": "Supposed to be."
+        }
+      ],
+      "end": true
+    }
+  ],
+  "interactionNotes": [
+    "A clicked thought opens its start node; choices are the visitor’s words.",
+    "Thoughts are not all shown at once. Visitor may dismiss any bubble without choosing a reply.",
+    "Announcement gates require actual completed playback, not elapsed page time.",
+    "Ajo waits while the operator speaks. Babble reveals words as spoken. Choice intent updates session-only social state before reply selection.",
+    "Tired means recently awakened; it does not establish a hangover.",
+    "Irritated variants are for repeated personal probing, not a random initial response.",
+    "The existing station recording is ambient audio, not an arrival trigger. This draft does not repeat its arriving-soon promise or advance the journey. Audio content is unchanged; reconsider that recording separately for the endless prerelease ride.",
+    "Trust is earned through practical help, empathy and respecting boundaries, never by dismissing bubbles. Repeated positive choices do not farm trust.",
+    "One pry or tease is tolerated; two raise irritation. An apology or respectful exit can ease tension. Irritation overrides warmth.",
+    "Tired variants can appear during the first two turns. Warmth adds a small detail, never intimate disclosure."
+  ]
+}

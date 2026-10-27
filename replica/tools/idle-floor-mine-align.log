@@ -1,0 +1,3 @@
+﻿[size] [1600,900,1600,900]
+[full] {"mineMean":[138.4,121.8,104.6],"overThreshold":5.5,"width":1600,"height":900}
+[align] {"dx":0,"dy":0,"over":5.5}

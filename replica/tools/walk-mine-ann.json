@@ -1,0 +1,130 @@
+[
+  {
+    "step": "thought",
+    "thought": "Yeah lady, I heard you...",
+    "reply": null,
+    "chunks": [],
+    "listening": false,
+    "choices": [],
+    "leave": false,
+    "hotspot": [
+      1205.4,
+      722.2,
+      229.2
+    ]
+  },
+  {
+    "step": 0,
+    "thought": null,
+    "reply": "I bought a ticket and got a fucking press release.",
+    "chunks": [
+      {
+        "text": "I ",
+        "opacity": "1"
+      },
+      {
+        "text": "bought ",
+        "opacity": "1"
+      },
+      {
+        "text": "a ",
+        "opacity": "1"
+      },
+      {
+        "text": "ticket ",
+        "opacity": "1"
+      },
+      {
+        "text": "and ",
+        "opacity": "1"
+      },
+      {
+        "text": "got ",
+        "opacity": "1"
+      },
+      {
+        "text": "a ",
+        "opacity": "1"
+      },
+      {
+        "text": "fucking ",
+        "opacity": "1"
+      },
+      {
+        "text": "press ",
+        "opacity": "1"
+      },
+      {
+        "text": "release.",
+        "opacity": "1"
+      }
+    ],
+    "listening": false,
+    "choices": [
+      "Bit much announcing your ticket to everyone.",
+      "You sure that ticket’s yours?",
+      "Was that about you?"
+    ],
+    "leave": false,
+    "hotspot": [
+      1189.8,
+      740,
+      281.7
+    ]
+  },
+  {
+    "step": 1,
+    "thought": null,
+    "reply": "Do they always dox their customers?",
+    "chunks": [
+      {
+        "text": "Do ",
+        "opacity": "1"
+      },
+      {
+        "text": "they ",
+        "opacity": "1"
+      },
+      {
+        "text": "always ",
+        "opacity": "1"
+      },
+      {
+        "text": "dox ",
+        "opacity": "1"
+      },
+      {
+        "text": "their ",
+        "opacity": "1"
+      },
+      {
+        "text": "customers?",
+        "opacity": "1"
+      }
+    ],
+    "listening": false,
+    "choices": [
+      "Leave him to it"
+    ],
+    "leave": true,
+    "hotspot": [
+      1189.5,
+      739.5,
+      281.6
+    ]
+  },
+  {
+    "step": 2,
+    "thought": null,
+    "reply": null,
+    "chunks": [],
+    "listening": false,
+    "choices": [],
+    "leave": false,
+    "hotspot": [
+      1205.3,
+      722.6,
+      229.2
+    ]
+  }
+]

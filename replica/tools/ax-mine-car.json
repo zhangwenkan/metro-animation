@@ -1,0 +1,94 @@
+[
+ {
+  "depth": 0,
+  "role": "RootWebArea",
+  "name": "Ajo was here"
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "main",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "button",
+  "name": "Read the newspaper"
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 5,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 6,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 7,
+  "role": "button",
+  "name": "Forgot to send the invoice."
+ },
+ {
+  "depth": 8,
+  "role": "StaticText",
+  "name": "Forgot to send the invoice."
+ },
+ {
+  "depth": 9,
+  "role": "InlineTextBox",
+  "name": "Forgot to send the invoice."
+ },
+ {
+  "depth": 5,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "paragraph",
+  "name": "",
+  "live": "polite"
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "button",
+  "name": "About & contact",
+  "expanded": false
+ },
+ {
+  "depth": 3,
+  "role": "image",
+  "name": ""
+ }
+]

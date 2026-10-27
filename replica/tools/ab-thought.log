@@ -1,0 +1,13 @@
+﻿
+[thought-box] div[class*='w-[min(280px']
+  rect site=638.49,267.07,280,71.09 mine=638.68,269.73,280,71.09
+  transform: site="matrix(1, 0, 0, 1, 638.486, 267.072)" mine="matrix(1, 0, 0, 1, 638.678, 269.734)"
+[reply-panel] absent锛堜袱杈归兘娌℃湁锛?[reply-face] absent锛堜袱杈归兘娌℃湁锛?[reply-text] absent锛堜袱杈归兘娌℃湁锛?[tail] absent锛堜袱杈归兘娌℃湁锛?[choice-1] ok  rect=32,1020.89,408,56
+
+[caption] main p
+  rect site=475.17,842.7,634.65,25.3 mine=475.17,817.41,634.65,50.59
+  textWidth site=257.25 mine=381.77
+  height: site="25.2969px" mine="50.5938px"
+  text site="Next is Shizuoka. Shizuoka." mine="Passengers leaving the train, please mak"
+
+5/7 probes identical

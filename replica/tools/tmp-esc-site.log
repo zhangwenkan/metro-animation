@@ -1,0 +1,6 @@
+﻿[page] {"size":[1585,900],"rect":[0,0,1585,900],"text":"No wonder they鈥檝e been so nice to me.\nNo wonder they鈥檝e been so nice to me.\n\nWhat do you do for work?\n\nTobi Moccagatta\n\nDesign engineer at basement.studio.\nMaki"}
+[eval-error] page.evaluate: SyntaxError: Invalid left-hand side in assignment
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:370:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[shot] D:\鑷繁鍋氱潃鐜╃殑\鍦伴搧鍔ㄧ敾\replica\_tmp_esc_site.png

@@ -1,0 +1,327 @@
+/* 站点只用到 Tailwind 的 theme + utilities，reset 用它自己的
+   （ref/site/styles/0ic59ty-fvow1.css 里那段 :where(...){all:unset}）。
+   照抄 preflight 会多出 line-height:1.5、button{text-align:center} 之类，
+   摆位和字形都会跟着偏，所以这里显式跳过 preflight。
+
+   站点那份 CSS 里除了 @layer properties 之外没有任何 layer：工具类和 reset
+   都是裸规则，靠文件顺序决胜负。reset 排在工具类之后，所以特异度打平时
+   重置生效——例如 v4 的 :where(.space-y-1>:not(:last-child)) 特异度是 0，
+   会被 all:unset 直接吃掉，间距根本不出现。要是把 reset 塞进 @layer base，
+   它就会输给 utilities，凭空多出 4px 行距，所以这里同样不加 layer。 */
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+
+/* 站点在自己的 theme 里把 lg 圆角从默认 8px 改成 12px（报纸热点的 rounded-lg） */
+:root,
+:host {
+  --radius-lg: 12px;
+}
+
+/* ===== 站点全局 reset（原文照搬） ===== */
+
+/* 注意：下面这两层 :not() 必须连写，中间不能有任何空白，
+   否则会变成后代组合器，语义完全不同。 */
+:where(:not(html,iframe,canvas,img,svg,video,audio,dialog,vercel-live-feedback,nextjs-portal,:where(select,option)):not(svg *,symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+html {
+  --scrollbar-gutter: 0px;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  /* 先扣掉 15px 滚动条槽：整页布局宽度是 1585 而不是 1600，
+     少了这条所有元素都会横向偏 7.5px */
+  scrollbar-gutter: stable;
+  text-rendering: optimizelegibility;
+}
+
+html.lenis-stopped {
+  --scrollbar-gutter: var(--scrollbar-width);
+}
+
+html.overflow-hidden {
+  touch-action: none;
+  overflow: hidden;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+  cursor: revert;
+}
+
+ol,
+ul,
+menu,
+summary {
+  list-style: none;
+}
+
+ol {
+  counter-reset: revert;
+}
+
+img,
+video,
+audio {
+  max-block-size: 100%;
+  max-inline-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  appearance: revert;
+}
+
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: inherit;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  overscroll-behavior: none;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+/* 站点是 Next.js，body 的第一个元素就是那个带字体 class 的 div；
+   我们多一层 Vite 的 #root 挂载点，用 display:contents 让它不参与布局、
+   也不进无障碍树，DOM 形状才能和站点对齐。 */
+#root {
+  display: contents;
+}
+
+::selection {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+a {
+  text-decoration-skip-ink: auto;
+  text-underline-position: from-font;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-contrast);
+}
+
+html.scrollbar-grabbing,
+img {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+button {
+  cursor: pointer;
+  text-box-edge: cap alphabetic;
+  text-box-trim: both;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* 站点用 next/font 注入的字体，名字和 fallback 的度量覆盖都照抄，
+   否则行高/换行位置会和原站差一两个像素。 */
+@font-face {
+  font-family: amiamie;
+  src: url("/fonts/amiamie-regular.otf") format("opentype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: amiamie;
+  src: url("/fonts/amiamie-italic.otf") format("opentype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: amiamie Fallback;
+  src: local(Arial);
+  ascent-override: 93.46%;
+  descent-override: 22.16%;
+  line-gap-override: 19.27%;
+  size-adjust: 103.79%;
+}
+
+/* 站点的 amiamie_33444c6-module__WHFKVq__className 包住了整个应用 */
+.font-amiamie {
+  font-family: amiamie, amiamie Fallback;
+}
+
+/* ===== entry-screen-module（ref/site/styles/1zq30m3i7ngly.css） ===== */
+.entry-runner {
+  filter: brightness(0) invert(0.55);
+  background-image: url("/assets/intro/ajo-run.webp");
+  background-position: 0 -30px;
+  background-repeat: no-repeat;
+  background-size: 448px 149.333px;
+  width: 56px;
+  height: 88px;
+  animation: 0.6667s steps(8, end) infinite entry-run;
+  display: block;
+}
+
+@keyframes entry-run {
+  to {
+    background-position-x: -448px;
+  }
+}
+
+.entry-depart {
+  animation: 0.24s ease-in both entry-depart;
+}
+
+.entry-reveal {
+  animation: 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.24s both entry-reveal;
+}
+
+@keyframes entry-depart {
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes entry-reveal {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entry-runner {
+    animation: none;
+  }
+  .entry-depart {
+    animation-duration: 1ms;
+  }
+  .entry-reveal {
+    animation-duration: 1ms;
+    animation-delay: 0s;
+  }
+}
+
+/* ===== listening-indicator-module（ref/site/styles/2-em83408b1nz.css） ===== */
+.listening-indicator-module__3H1sLa__dot {
+  animation: 1s steps(6, end) infinite listening-indicator-module__3H1sLa__listen;
+}
+
+@keyframes listening-indicator-module__3H1sLa__listen {
+  0%,
+  to {
+    opacity: 0.35;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .listening-indicator-module__3H1sLa__dot {
+    opacity: 0.65;
+    animation: none;
+  }
+}
+
+/* ===== text-reveal-module（同一份 CSS） ===== */
+.text-reveal-module__GYHhaq__content {
+  animation: 0.12s ease-out 0.24s both text-reveal-module__GYHhaq__reveal;
+}
+
+@keyframes text-reveal-module__GYHhaq__reveal {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-reveal-module__GYHhaq__content {
+    animation-duration: 1ms;
+    animation-delay: 0s;
+  }
+}
+
+/* 画布铺满 stage（three 的 setSize 不写样式，尺寸交给 CSS） */
+main canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 我自己的调试层（站点没有） */
+.hud {
+  position: fixed;
+  left: 16px;
+  bottom: 14px;
+  font: 12px/1.5 ui-monospace, monospace;
+  color: #9fb0b5;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  white-space: pre;
+  z-index: 60;
+}
+
+.hud .err {
+  color: #ff8a7a;
+}

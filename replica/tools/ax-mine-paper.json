@@ -1,0 +1,60 @@
+[
+ {
+  "depth": 0,
+  "role": "RootWebArea",
+  "name": "Ajo was here"
+ },
+ {
+  "depth": 1,
+  "role": "dialog",
+  "name": "The Local newspaper",
+  "modal": true
+ },
+ {
+  "depth": 2,
+  "role": "button",
+  "name": "Put newspaper back"
+ },
+ {
+  "depth": 2,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "image",
+  "name": "Ajo"
+ },
+ {
+  "depth": 3,
+  "role": "status",
+  "name": "",
+  "live": "polite"
+ },
+ {
+  "depth": 4,
+  "role": "StaticText",
+  "name": "Listening to the announcement"
+ },
+ {
+  "depth": 5,
+  "role": "InlineTextBox",
+  "name": "Listening to the announcement"
+ },
+ {
+  "depth": 3,
+  "role": "paragraph",
+  "name": "",
+  "live": "polite"
+ },
+ {
+  "depth": 4,
+  "role": "StaticText",
+  "name": "This is normal and requires no special action."
+ },
+ {
+  "depth": 5,
+  "role": "InlineTextBox",
+  "name": "This is normal and requires no special action."
+ }
+]

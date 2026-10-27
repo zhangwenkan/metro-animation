@@ -1,0 +1,22 @@
+{
+  "kind": "Denoised diffuse direct + indirect, plus0.6 x denoised direct; COLOR excluded",
+  "size": 2048,
+  "samples": 128,
+  "uvChannel": 1,
+  "movingPartsExcluded": true,
+  "sunDirectionBlender": [
+    -0.21357432007789612,
+    -0.3285760283470154,
+    -0.920012891292572
+  ],
+  "sunEnergy": 12.0,
+  "sunColorLinear": [
+    1.0,
+    0.7799999713897705,
+    0.5
+  ],
+  "directMultiplier": 1.6,
+  "combinedAtlas": "carriage-sunboost-v06.exr",
+  "denoised": true,
+  "compression": "DWAA half float"
+}

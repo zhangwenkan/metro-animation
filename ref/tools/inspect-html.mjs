@@ -1,0 +1,12 @@
+import fs from 'fs';
+const h = fs.readFileSync('ref/site/index.html', 'utf8');
+const scripts = [...h.matchAll(/<script[^>]*src="([^"]+)"[^>]*>/g)].map((m) => m[1]);
+console.log('script src:', scripts);
+console.log('inline scripts:', (h.match(/<script(?![^>]*\ssrc=)/g) || []).length);
+console.log('has __next_f:', h.includes('__next_f'));
+console.log('link href:', [...h.matchAll(/<link[^>]*href="([^"]+)"/g)].map((m) => m[1]).slice(0, 20));
+const ul = new Set([...h.matchAll(/"(\/[^"]*?\.(?:js|css|glb|webp|exr|ogg|json|wasm|woff2))"/g)].map((m) => m[1]));
+console.log('urls in html:', [...ul].slice(0, 40));
+const pre = h.slice(0, 1200);
+console.log('--- head ---');
+console.log(pre);

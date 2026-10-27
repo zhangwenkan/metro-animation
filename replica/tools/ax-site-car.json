@@ -1,0 +1,105 @@
+[
+ {
+  "depth": 0,
+  "role": "RootWebArea",
+  "name": "Ajo was here"
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "main",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "button",
+  "name": "Read the newspaper"
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 5,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 6,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 7,
+  "role": "button",
+  "name": "I’m starving to death."
+ },
+ {
+  "depth": 8,
+  "role": "StaticText",
+  "name": "I’m starving to death."
+ },
+ {
+  "depth": 9,
+  "role": "InlineTextBox",
+  "name": "I’m starving to death."
+ },
+ {
+  "depth": 5,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 3,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 4,
+  "role": "paragraph",
+  "name": "",
+  "live": "polite"
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "button",
+  "name": "About & contact",
+  "expanded": false
+ },
+ {
+  "depth": 3,
+  "role": "image",
+  "name": ""
+ },
+ {
+  "depth": 1,
+  "role": "generic",
+  "name": ""
+ },
+ {
+  "depth": 2,
+  "role": "alert",
+  "name": "",
+  "live": "assertive"
+ }
+]

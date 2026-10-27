@@ -1,0 +1,18 @@
+﻿node.exe : file:///D:/%E8%87%AA%E5%B7%B1%E5%81%9A%E7%9D%80%E7%8E%A9%E7%9A%84/%E5%9C%B0%E9%93%81%E5%8A%A8%E7%94%BB/repli
+ca/tools/props.mjs:156
+所在位置 行:1 字符: 87
++ ... \node.exe'; & $N tools/props.mjs --no-webfonts --w 390 --h 844 --clic ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (file:///D:/%E8%...s/props.mjs:156:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    if (stillBlocked) throw new Error(`[${label}] ${selector} 涓€鐩存槸 disabled锛岀珯鐐规病鍔犺浇瀹宍);
+                            ^
+
+Error: [site] button[aria-label^=Read] 涓€鐩存槸 disabled锛岀珯鐐规病鍔犺浇瀹?
+    at capture (file:///D:/%E8%87%AA%E5%B7%B1%E5%81%9A%E7%9D%80%E7%8E%A9%E7%9A%84/%E5%9C%B0%E9%93%81%E5%8A%A8%E7%94%BB/
+replica/tools/props.mjs:156:29)
+    at async file:///D:/%E8%87%AA%E5%B7%B1%E5%81%9A%E7%9D%80%E7%8E%A9%E7%9A%84/%E5%9C%B0%E9%93%81%E5%8A%A8%E7%94%BB/rep
+lica/tools/props.mjs:230:14
+
+Node.js v22.14.0
